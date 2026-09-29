@@ -1,83 +1,26 @@
-# DeepSeek iOS 客户端
+# deepseek
 
-基于 SwiftUI 开发的 DeepSeek API 移动端 AI 应用。通过 DeepSeek 强大的大语言模型能力,为用户提供流畅的 AI 对话体验。支持实时对话、多轮交互、历史记录管理、自定义提示词等功能,让您随时随地享受智能对话服务。
+本仓库是「deepseek」的安卓版本获取入口，附使用资料索引。
 
-## 应用截图
+## 安装文件资源（夸克网盘）
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
-    <img src="Picture/Home.png" width="200" alt="聊天界面" />
-    <img src="Picture/Menu.png" width="200" alt="聊天界面" />
-    <img src="Picture/Setting.png" width="200" alt="设置界面" />
-    <img src="Picture/Conversation.png" width="200" alt="对话界面" />
-    <img src="Picture/Prompt.png" width="200" alt="提示词管理" />
-    <img src="Picture/Attach.png" width="200" alt="主题设置" />
-</div>
+> **deepseek 安装文件资源（夸克网盘）**：[https://pan.quark.cn/s/04dabced1781](https://pan.quark.cn/s/04dabced1781)
 
-## 功能特性
+## 官方项目
 
-### 核心功能
+- 上游项目：[DargonLee/DeepSeek](https://github.com/DargonLee/DeepSeek)
 
-- 实时 AI 对话：与 DeepSeek AI 进行实时对话交互
-- 历史会话管理：保存并管理所有对话历史
-- 多主题支持：支持多种对话场景和主题
-- 消息本地存储：使用 CoreData 实现消息持久化
-- 自定义设置：个性化配置对话参数
+## 更多资料
 
-### 特色功能
+- [下载与安装教程](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/deepseek/%E4%B8%8B%E8%BD%BD%E4%B8%8E%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.md)
+- [常见问题与解决方法](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/deepseek/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.md)
+- [手机版与网页版功能对比](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/deepseek/%E6%89%8B%E6%9C%BA%E7%89%88%E4%B8%8E%E7%BD%91%E9%A1%B5%E7%89%88%E5%8A%9F%E8%83%BD%E5%AF%B9%E6%AF%94.md)
+- [服务器繁忙请稍后再试怎么办](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/deepseek/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%B9%81%E5%BF%99%E8%AF%B7%E7%A8%8D%E5%90%8E%E5%86%8D%E8%AF%95%E6%80%8E%E4%B9%88%E5%8A%9E.md)
+- [注册登录方法与账号同步](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/deepseek/%E6%B3%A8%E5%86%8C%E7%99%BB%E5%BD%95%E6%96%B9%E6%B3%95%E4%B8%8E%E8%B4%A6%E5%8F%B7%E5%90%8C%E6%AD%A5.md)
+- [深度思考与联网搜索怎么用](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/deepseek/%E6%B7%B1%E5%BA%A6%E6%80%9D%E8%80%83%E4%B8%8E%E8%81%94%E7%BD%91%E6%90%9C%E7%B4%A2%E6%80%8E%E4%B9%88%E7%94%A8.md)
+- [聊天记录导出与删除方法](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/deepseek/%E8%81%8A%E5%A4%A9%E8%AE%B0%E5%BD%95%E5%AF%BC%E5%87%BA%E4%B8%8E%E5%88%A0%E9%99%A4%E6%96%B9%E6%B3%95.md)
+- [全部软件目录](https://github.com/alipymanbu/Android/blob/master/%E5%85%A8%E9%83%A8%E8%BD%AF%E4%BB%B6%E7%9B%AE%E5%BD%95.md)
 
-- 快捷提示词：预设常用提示词，快速开始对话
-- 消息复制：支持复制对话内容
-- 实时输入：流畅的打字体验和即时响应
-- 优雅的 UI：符合 iOS 设计规范的界面设计
+---
 
-## 技术架构
-
-- SwiftUI
-- CoreData (本地存储)
-- DeepSeek API
-
-## 项目结构
-
-```DeepSeek/
-├── Core/
-│ ├── Network/ # 网络请求、API封装
-│ ├── Services/ # 核心服务
-│ └── Storage/ # 数据存储相关
-├── Data/
-│ ├── Models/ # 数据模型定义
-│ └── Stores/ # 状态管理
-├── Features/
-│ ├── Chat/ # 聊天功能
-│ │ ├── Views/ # 聊天界面
-│ │ ├── Models/ # 聊天数据模型
-│ │ └── ViewModels/ # 聊天业务逻辑
-│ ├── Setting/ # 设置功能
-│ │ ├── Views/ # 设置界面
-│ │ └── ViewModels/ # 设置业务逻辑
-│ ├── Prompt/ # 提示词管理
-│ │ ├── Views/ # 提示词界面
-│ │ └── Models/ # 提示词数据模型
-│ └── Components/ # 公共组件
-├── Resources/ # 资源文件
-│ ├── Assets/ # 图片资源
-│ └── Localization/ # 多语言
-└── Utils/ # 工具类
-    ├── Extensions/ # 扩展
-    └── Helpers/ # 辅助工具
-```
-
-## 开发进度
-
-- [x] 基础 UI 框架
-- [x] 聊天界面
-- [x] 侧边栏导航
-- [x] API 集成
-- [x] 数据持久化
-- [x] 设置功能
-- [x] 错误处理
-
-## 开发环境
-
-- Xcode 15+
-- iOS 17.0+
-- Swift 5.9+
+> 本仓库由上游项目 fork 而来，原始说明见[上游仓库](https://github.com/DargonLee/DeepSeek)。
